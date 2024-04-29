@@ -1,0 +1,44 @@
+Data-
+userInput - int
+Pixels - 2d array of integers
+loadImage- file pointer
+userEditSelect- int
+userCropCoordinates- int array
+imageSave - file pointer
+fileName- string
+
+Functions-
+main()
+ Data: Array for pixels to store a loaded image. Filer pointers
+Functionality: Open file containing image, calls function to store image in a 2D array, Display menu to user.
+
+loadImage()
+Input Parameters: File pointer, int columns, int rows, int image 2D array
+Returned Output: None
+Functionality: Load values from file into image 2D array
+
+displayImage()
+Input Parameters: 2D image array
+Returned Output: None
+Functionality: Image displayed in Terminal
+
+cropImage()
+Input parameters: User input coordinates, 2D image array
+Returned Output: cropped imaged
+Functionality: crops image based on user input coordinates
+
+dimImage()
+Input parameters: 2D image array
+Returned Output: Dimmed image
+Functionality: Dims each pixel by one brightness value
+
+brightenImage()
+Input parameters: 2D image array
+Returned Output: Brightened image
+Functionality: Brightens each pixel by one brightness value
+
+rotateImage()
+Input parameters: 2D image array
+Returned output: rotated image
+Functionality: image rotation of 90 degrees
+
