@@ -1,0 +1,64 @@
+Design Document
+Jake Castanon
+Image Processing Thing
+Data
+Image - 2D array
+Ask - char
+File1 - string
+File2 - string
+Fp1 - file pointer
+Fp2 - file pointer
+Program
+The user is prompted with a menu to load a new image, display the current image, edit
+the current image, or exit the program. If the user loads a new image, it loads the image
+into a 2D array. If the user chooses to edit the current image, they are prompted with a
+new menu that asks the user if they want to crop the image, dim the image, or brighten
+the image. After editing the image, the user is asked if they want to save it, and then the
+user is brought back to the first menu.
+Functions
+crop()
+Parameters: The 2D Array
+Return: The 2D Array
+Functionality: Asks the user which smaller section of the original image they would like
+to use to create an edited image and then returns an array of the edited image.
+dim()
+Parameters: The 2D Array
+Return: The 2D Array
+Functionality: Decreases every character in the image by one brightness value, and if the
+character is already the lowest brightness, it stays the same.
+brighten()
+Parameters: The 2D Array
+Return: The 2D Array
+Functionality: Increases every character in the image by one brightness value, and if the
+character is already max brightness, it stays the same.
+menu1()
+Parameters: none
+Return: none
+Functionality: Displays options for the user to load a new image, display the current
+image, edit the current image, or exit the program.
+menu2()
+Parameters: none
+Return: none
+Functionality: Displays options for the user to crop the image, dim the image, or
+brighten the image.
+fileSave()
+Parameters: The 2D Array
+Return: none
+Functionality: Asks the user if they want to save their edited image to a file. If the user
+agrees they are prompted for a file name and then the image is saved into the file through
+a loop that goes through the array.
+loadImage()
+Parameters: File Pointer, The 2D Array
+Return: The 2D Array
+Functionality: Asks the user for a file name and then reads the file and puts all the
+brightness values into the 2D array.
+displayImage()
+Parameters: The 2D Array
+Return: None
+Functionality: Runs a loop that changes the values into the corresponding character and
+then runs another loop that displays the image on the screen.
+main()
+Data: The 2D Array and Variables for decisions
+Functionality: In a while loop, prompts the menus in order and does what the user asks
+through if statements, and if the user asks to exit the program, the while loop ends and the
+program stops.
